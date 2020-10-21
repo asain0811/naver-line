@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>download</title>
+	<link rel="stylesheet" href="css/dnld.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		$(function () {
+			$('.myslider').bxSlider({
+				mode: 'fade',// horizontal 기본값
+				auto: true, //자동으로 슬라이딩 시작 여부
+				autoControls: true, //시작,정지 컨트롤 버튼 노출
+				pager: true //하단에 인디케이터 노출
+			});
+		});
+      //]]>
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>LINE</h1>
+			<ul>
+				<li class="logo"><a href="./index.html">LINE</a></li>
+				<li>
+
+					<a href="./dnld.html"><strong>다운로드</strong></a>
+					<span>|</span>
+				</li>
+				<li><a href="./app.html">패밀리앱</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="./game.html">게임</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="./store.html">LINE STORE</a>
+				</li>
+			</ul>
+			<div class="lang">
+				<label for="toggle" class="right">&nbsp;한국어</label>
+				<input type="checkbox" id="toggle" style="display: none;">
+
+				<p class="select"><a href="#"></a></p>
+			</div>
+		</header>
+		<section>
+			<div class="mobile">
+				<h2>Mobile</h2>
+				<span class="frame">
+					<img src="./images/dl_main_mobile_2.png" alt="#"></span>
+				<div class="dl1">
+					<span class="google"><a href="https://play.google.com/store/apps/details?id=jp.naver.line.android">
+							<img src="./images/dl_google_161229_ko.png" alt="#"></a></span>
+					<span class="apple"><a href="https://apps.apple.com/kr/app/line/id443904275">
+							<img src="./images/dl_ios_161229_ko.png" alt="#"></a></span>
+				</div>
+				<div class="dl2">
+					<span class="apk"><a href="https://line-android-universal-download.line-scdn.net/line-apk-download.html">
+							<img src="./images/dl_android_apk_pc_191016_03.png" alt="#">APK</a></span>
+					<span class="Line-lite"><a href="https://play.google.com/store/apps/details?id=com.linecorp.linelite">
+							<img src="./images/dl_sub_lite.png" alt="#">LINE Lite</a></span>
+				</div>
+			</div>
+			<div class="pc">
+				<h2>PC / Mac</h2>
+				<span class="frame"><img src="./images/dl_main_pc.png" alt="#"></span>
+				<span class="window"><a href="https://desktop.line-scdn.net/win/new/LineInst.exe">
+						<img src="./images/dl_windows_161229_ko.png" alt="#"></a></span>
+				<div class="dl3">
+					<span class="w-store"><a href="https://www.microsoft.com/ko-kr/p/line/9wzdncrfj2g6?rtc=1">
+							<img src="./images/dl_sub_windowsstore.png" alt="#">Windows store</a></span>
+					<span class="mac"><a href="https://apps.apple.com/kr/app/line/id539883307?ign-mpt=uo%3D4&mt=12">
+							<img src="./images/dl_sub_macos.png" alt="#">Mac OS</a></span>
+					<span class="chrome"><a
+							href="https://chrome.google.com/webstore/detail/line/ophjlpahpchlmihnnnihgmmeilfjmjjc?utm_source=chrome-ntp-icon">
+							<img src="./images/dl_sub_chrome.png" alt="#">Chrome</a></span>
+				</div>
+				<p><a href="https://line.me/ko/download/screen-saver">Screen saver for PC / Mac</a></p>
+			</div>
+		</section>
+
+		<footer>
+			<address>&copy;Designed by hw</address>
+		</footer>
+	</div>
+</body>
+
+</html>

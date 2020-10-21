@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>line-main</title>
+	<link rel="stylesheet" href="css/game.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		$(function () {
+			$('.myslider').bxSlider({
+				mode: 'fade',// horizontal 기본값
+				auto: true, //자동으로 슬라이딩 시작 여부
+				autoControls: true, //시작,정지 컨트롤 버튼 노출
+				pager: true //하단에 인디케이터 노출
+			});
+		});
+      //]]>
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>LINE</h1>
+			<ul>
+				<li><a href="">LINE</a></li>
+				<li><a href="">다운로드</a></li>
+				<li><a href="">패밀리앱</a></li>
+				<li><a href="">게임</a></li>
+				<li><a href="">LINE STORE</a></li>
+
+			</ul>
+		</header>
+		<section>
+			<ul class="myslider">
+				<li class="slide-1">1번 슬라이드 내용</li>
+				<li class="slide-2">2번 슬라이드 내용</li>
+				<li class="slide-3">3번 슬라이드 내용</li>
+				<li class="slide-4">4번 슬라이드 내용</li>
+			</ul>
+		</section>
+		<footer>
+			<address>&copy;Designed by hw</address>
+		</footer>
+	</div>
+</body>
+
+</html>

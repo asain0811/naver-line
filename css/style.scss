@@ -1,0 +1,361 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+header {
+	padding: 30px 0 0 360px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 66px;
+	border-bottom: 3px solid black;
+	z-index: 1000;
+	background-color: #fff;
+
+	h1 {
+		display: none;
+	}
+	> ul {
+		display: flex;
+	}
+	> ul > li {
+		width: 73px;
+		height: 66px;
+		color: grey;
+		text-align: center;
+	}
+
+	.logo > a {
+		display: block;
+		text-indent: -9999px;
+		background-image: url(../images/logo160629.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.lang {
+		position: relative;
+	}
+	.lang > .right {
+		position: absolute;
+		right: 700px;
+		top: -80px;
+		display: block;
+		width: 150px;
+		height: 24px;
+		line-height: 24px;
+		border: 1px solid grey;
+	}
+	#toggle:hover + .select {
+		display: block;
+	}
+	.select {
+		display: none;
+		position: absolute;
+		right: 700px;
+		top: -54px;
+		width: 300px;
+		height: 259px;
+		background-image: url(../images/lang.png);
+	}
+}
+
+// .bx-wrapper
+//     > .bx-viewport > 우리가만든 .myslider
+//     > .bx-controls
+//        > .bx-controls-direction(이전다음)
+//        > .bx-controls-auto(자동재생,멈춤)
+//        > .bx-pager (인디케이터-페이지네이션)
+
+section {
+	// header에 pos:f 때문
+	margin-top: 69px;
+
+	> .bx-wrapper {
+		position: relative;
+
+		.myslider {
+			height: 440px;
+
+			> li {
+				width: 100%;
+				height: 440px;
+				text-indent: -9999px;
+				background-position: center top;
+				background-repeat: no-repeat;
+
+				&.slide-1 {
+					background-image: url(../images/line_mainbanr_pc_001.png);
+				}
+				&.slide-2 {
+					background-image: url(../images/line_mainbanr_pc_002.png);
+				}
+				&.slide-3 {
+					background-image: url(../images/line_mainbanr_pc_003.png);
+				}
+				&.slide-4 {
+					background-image: url(../images/line_mainbanr_pc_004.png);
+				}
+			} //end of li
+		} //end of .myslider
+
+		// 이전, 다음
+		.bx-controls-direction > a {
+			display: block;
+			position: absolute;
+			top: 50%;
+			width: 30px;
+			height: 58px;
+			margin-top: -29px;
+			text-indent: -9999px;
+			background-image: url(../images/line_mainbanr_btn_arr.png);
+			background-repeat: no-repeat;
+			// border: 3px solid red;
+
+			&.bx-prev {
+				left: 5px;
+				background-position: -5px -141px;
+
+				&:hover {
+					background-position: -5px -209px;
+				}
+			}
+
+			&.bx-next {
+				right: 5px;
+				background-position: -5px -5px;
+
+				&:hover {
+					background-position: -5px -73px;
+				}
+			}
+		} //end of a
+
+		// 페이지네이션(인디케이터)
+		.bx-pager {
+			position: absolute;
+			left: 50%;
+			bottom: 17px;
+			display: flex;
+			flex-flow: row nowrap;
+			width: 112px;
+			margin-left: -56px;
+			justify-content: space-between;
+			z-index: 1000;
+			// outline: 3px solid red;
+
+			> .bx-pager-item {
+				width: 13px;
+
+				> a {
+					display: block;
+					height: 13px;
+					text-indent: -9999px;
+					// border: 1px solid #000;
+					background-color: grey;
+					box-sizing: border-box;
+					border-radius: 7px;
+
+					&:hover,
+					&.active {
+						background-color: #fff;
+					}
+				} //end of a
+			} //end of .bx-pager-item
+		} //end of .bx-pager
+
+		//오토플레이(Start, Stop)
+		.bx-controls-auto {
+			.bx-start {
+				display: block;
+				position: absolute;
+				left: calc(50% + 80px);
+				bottom: 18px;
+				width: 10px;
+				height: 11px;
+				text-indent: -9999px;
+				background-image: url(../images/controls.png);
+				background-position: -86px -11px;
+				background-repeat: no-repeat;
+				z-index: 1000;
+
+				&:hover,
+				&.active {
+					background-position: -86px 0;
+				}
+			} //end of .bx-start
+
+			.bx-stop {
+				display: block;
+				position: absolute;
+				left: calc(50% + 100px);
+				bottom: 18px;
+				width: 9px;
+				height: 11px;
+				text-indent: -9999px;
+				background-image: url(../images/controls.png);
+				background-position: -86px -44px;
+				background-repeat: no-repeat;
+				z-index: 1000;
+
+				&:hover,
+				&.active {
+					background-position: -86px -33px;
+				}
+			} //end of .bx-stop
+		}
+	} //end of .bx-wrapper
+
+	.free {
+		position: relative;
+		display: flex;
+		.frame {
+			> img {
+				display: block;
+				margin-top: 80px;
+				margin-left: 300px;
+			}
+		}
+		h2 {
+			margin: 47px 0 0 50px;
+			color: #444;
+			font-size: 54px;
+		}
+		p {
+			margin-top: 1px;
+			position: absolute;
+			top: 200px;
+			left: 800px;
+			color: #444;
+			font-size: 13px;
+		}
+	}
+
+	.call {
+		position: relative;
+		display: flex;
+		.frame {
+		}
+		h2 {
+			margin-top: 80px;
+			margin-left: 300px;
+			color: #444;
+			font-size: 54px;
+		}
+		p {
+			margin-top: 1px;
+			position: absolute;
+			top: 220px;
+			left: 300px;
+			color: #444;
+			font-size: 13px;
+		}
+		img {
+			display: block;
+			margin-top: 80px;
+			margin-left: 120px;
+		}
+	}
+
+	.stk {
+		position: relative;
+		display: flex;
+		.frame {
+			> img {
+				display: block;
+				margin-top: 80px;
+				margin-left: 120px;
+			}
+		}
+		h2 {
+			margin: 47px 0 0 50px;
+			color: #444;
+			font-size: 54px;
+		}
+		p {
+			margin-top: 1px;
+			position: absolute;
+			top: 270px;
+			left: 770px;
+			color: #444;
+			font-size: 13px;
+		}
+	}
+	.share {
+		position: relative;
+		display: flex;
+		.frame {
+		}
+		h2 {
+			margin-top: 80px;
+			margin-left: 300px;
+			color: #444;
+			font-size: 54px;
+		}
+		p {
+			margin-top: 1px;
+			position: absolute;
+			top: 300px;
+			left: 300px;
+			color: #444;
+			font-size: 13px;
+		}
+		img {
+			display: block;
+			margin-top: 80px;
+			margin-left: 120px;
+		}
+	}
+	.wt {
+		position: relative;
+		display: flex;
+		.frame {
+			> img {
+				display: block;
+				margin-top: 80px;
+				margin-left: 300px;
+			}
+		}
+		h2 {
+			margin: 47px 0 0 50px;
+			color: #444;
+			font-size: 54px;
+		}
+		p {
+			margin-top: 1px;
+			position: absolute;
+			top: 340px;
+			left: 800px;
+			color: #444;
+			font-size: 13px;
+		}
+	}
+	.last {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 100px auto;
+		width: 960px;
+		height: 887px;
+
+		.tl,
+		.keep,
+		.live,
+		.face,
+		.play {
+			width: 320px;
+			height: 403px;
+		}
+		h3,
+		p {
+			color: #444;
+		}
+	}
+} //end of section
+
+footer > address {
+	background-color: #333;
+	height: 40px;
+	color: #fff;
+	font-weight: 800;
+	line-height: 40px;
+	text-align: center;
+}

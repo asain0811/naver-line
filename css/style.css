@@ -1,0 +1,59 @@
+@import url(./reset.css);
+header { padding: 30px 0 0 360px; position: fixed; left: 0; top: 0; width: 100%; height: 66px; border-bottom: 3px solid black; z-index: 1000; background-color: #fff; }
+header h1 { display: none; }
+header > ul { display: flex; }
+header > ul > li { width: 73px; height: 66px; color: grey; text-align: center; }
+header .logo > a { display: block; text-indent: -9999px; background-image: url(../images/logo160629.png); background-repeat: no-repeat; background-size: contain; }
+header .lang { position: relative; }
+header .lang > .right { position: absolute; right: 700px; top: -80px; display: block; width: 150px; height: 24px; line-height: 24px; border: 1px solid grey; }
+header #toggle:hover + .select { display: block; }
+header .select { display: none; position: absolute; right: 700px; top: -54px; width: 300px; height: 259px; background-image: url(../images/lang.png); }
+
+section { margin-top: 69px; }
+section > .bx-wrapper { position: relative; }
+section > .bx-wrapper .myslider { height: 440px; }
+section > .bx-wrapper .myslider > li { width: 100%; height: 440px; text-indent: -9999px; background-position: center top; background-repeat: no-repeat; }
+section > .bx-wrapper .myslider > li.slide-1 { background-image: url(../images/line_mainbanr_pc_001.png); }
+section > .bx-wrapper .myslider > li.slide-2 { background-image: url(../images/line_mainbanr_pc_002.png); }
+section > .bx-wrapper .myslider > li.slide-3 { background-image: url(../images/line_mainbanr_pc_003.png); }
+section > .bx-wrapper .myslider > li.slide-4 { background-image: url(../images/line_mainbanr_pc_004.png); }
+section > .bx-wrapper .bx-controls-direction > a { display: block; position: absolute; top: 50%; width: 30px; height: 58px; margin-top: -29px; text-indent: -9999px; background-image: url(../images/line_mainbanr_btn_arr.png); background-repeat: no-repeat; }
+section > .bx-wrapper .bx-controls-direction > a.bx-prev { left: 5px; background-position: -5px -141px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-prev:hover { background-position: -5px -209px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-next { right: 5px; background-position: -5px -5px; }
+section > .bx-wrapper .bx-controls-direction > a.bx-next:hover { background-position: -5px -73px; }
+section > .bx-wrapper .bx-pager { position: absolute; left: 50%; bottom: 17px; display: flex; flex-flow: row nowrap; width: 112px; margin-left: -56px; justify-content: space-between; z-index: 1000; }
+section > .bx-wrapper .bx-pager > .bx-pager-item { width: 13px; }
+section > .bx-wrapper .bx-pager > .bx-pager-item > a { display: block; height: 13px; text-indent: -9999px; background-color: grey; box-sizing: border-box; border-radius: 7px; }
+section > .bx-wrapper .bx-pager > .bx-pager-item > a:hover, section > .bx-wrapper .bx-pager > .bx-pager-item > a.active { background-color: #fff; }
+section > .bx-wrapper .bx-controls-auto .bx-start { display: block; position: absolute; left: calc(50% + 80px); bottom: 18px; width: 10px; height: 11px; text-indent: -9999px; background-image: url(../images/controls.png); background-position: -86px -11px; background-repeat: no-repeat; z-index: 1000; }
+section > .bx-wrapper .bx-controls-auto .bx-start:hover, section > .bx-wrapper .bx-controls-auto .bx-start.active { background-position: -86px 0; }
+section > .bx-wrapper .bx-controls-auto .bx-stop { display: block; position: absolute; left: calc(50% + 100px); bottom: 18px; width: 9px; height: 11px; text-indent: -9999px; background-image: url(../images/controls.png); background-position: -86px -44px; background-repeat: no-repeat; z-index: 1000; }
+section > .bx-wrapper .bx-controls-auto .bx-stop:hover, section > .bx-wrapper .bx-controls-auto .bx-stop.active { background-position: -86px -33px; }
+section .free { position: relative; display: flex; }
+section .free .frame > img { display: block; margin-top: 80px; margin-left: 300px; }
+section .free h2 { margin: 47px 0 0 50px; color: #444; font-size: 54px; }
+section .free p { margin-top: 1px; position: absolute; top: 200px; left: 800px; color: #444; font-size: 13px; }
+section .call { position: relative; display: flex; }
+section .call h2 { margin-top: 80px; margin-left: 300px; color: #444; font-size: 54px; }
+section .call p { margin-top: 1px; position: absolute; top: 220px; left: 300px; color: #444; font-size: 13px; }
+section .call img { display: block; margin-top: 80px; margin-left: 120px; }
+section .stk { position: relative; display: flex; }
+section .stk .frame > img { display: block; margin-top: 80px; margin-left: 120px; }
+section .stk h2 { margin: 47px 0 0 50px; color: #444; font-size: 54px; }
+section .stk p { margin-top: 1px; position: absolute; top: 270px; left: 770px; color: #444; font-size: 13px; }
+section .share { position: relative; display: flex; }
+section .share h2 { margin-top: 80px; margin-left: 300px; color: #444; font-size: 54px; }
+section .share p { margin-top: 1px; position: absolute; top: 300px; left: 300px; color: #444; font-size: 13px; }
+section .share img { display: block; margin-top: 80px; margin-left: 120px; }
+section .wt { position: relative; display: flex; }
+section .wt .frame > img { display: block; margin-top: 80px; margin-left: 300px; }
+section .wt h2 { margin: 47px 0 0 50px; color: #444; font-size: 54px; }
+section .wt p { margin-top: 1px; position: absolute; top: 340px; left: 800px; color: #444; font-size: 13px; }
+section .last { display: flex; flex-wrap: wrap; margin: 100px auto; width: 960px; height: 887px; }
+section .last .tl, section .last .keep, section .last .live, section .last .face, section .last .play { width: 320px; height: 403px; }
+section .last h3, section .last p { color: #444; }
+
+footer > address { background-color: #333; height: 40px; color: #fff; font-weight: 800; line-height: 40px; text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
